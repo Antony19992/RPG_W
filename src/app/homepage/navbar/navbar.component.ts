@@ -19,7 +19,7 @@ export class NavbarComponent implements OnInit {
       {label: 'Ferreiro', icon: 'pi pi-fw pi-ticket', routerLink: ['/ferreiro']},
       {label: 'Relatórios', icon: 'pi pi-fw pi-file'},
       {label: 'Sobre', icon: 'pi pi-fw pi-exclamation-circle', routerLink: ['/sobre']},
-      {label: 'Configurações', icon: 'pi pi-fw pi-cog'}
+      {label: 'Mapa', icon: 'pi pi-fw pi-map', routerLink: ['/map']}
   ];
   }
 

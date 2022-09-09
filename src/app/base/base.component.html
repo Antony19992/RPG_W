@@ -1,20 +1,28 @@
 <h2>Seu exército</h2>
 <table border="1">
     <tr>
-        <td><a [routerLink]="['/sobre']"><img src="../../assets/lança.jpg" alt="lança" width="35px"></a></td>
-        <td><a [routerLink]="['/sobre']"><img src="../../assets/espada.png" alt="lança" width="35px"></a></td>
-        <td><a [routerLink]="['/sobre']"><img src="../../assets/arco.png" alt="lança" width="35px"></a></td>
-        <td><a [routerLink]="['/sobre']"><img src="../../assets/alabarda.jpg" alt="lança" width="35px"></a></td>
-        <td><a [routerLink]="['/sobre']"><img src="../../assets/cavalo.png" alt="lança" width="35px"></a></td>
-        <td><a [routerLink]="['/sobre']"><img src="../../assets/balista.jpg" alt="lança" width="35px"></a></td>
+        <td><a [routerLink]="['/sobre']"><img src="assets/lança.jpg" alt="lança" width="35px"></a></td>
+        <td><a [routerLink]="['/sobre']"><img src="assets/espada.png" alt="lança" width="35px"></a></td>
+        <td><a [routerLink]="['/sobre']"><img src="assets/arco.png" alt="lança" width="35px"></a></td>
+        <td><a [routerLink]="['/sobre']"><img src="assets/alabarda.jpg" alt="lança" width="35px"></a></td>
+        <td><a [routerLink]="['/sobre']"><img src="assets/cavalo.png" alt="lança" width="35px"></a></td>
+        <td><a [routerLink]="['/sobre']"><img src="assets/balista.jpg" alt="lança" width="35px"></a></td>
     </tr>
     <tr>
-        <td>100</td>
-        <td>22</td>
-        <td>80</td>
-        <td>10</td>
-        <td>22</td>
-        <td>2</td>
+        <td>{{lanca}}</td>
+        <td>{{espadachim}}</td>
+        <td>{{arqueiro}}</td>
+        <td>{{alabarda}}</td>
+        <td>{{cavalo}}</td>
+        <td>{{balista}}</td>
+    </tr>
+    <tr>
+        <td><input id="lanceiro" type="number" value="0"></td>
+        <td><input id="envespadachim" type="number" value="0"></td>
+        <td><input id="envarqueiro" type="number" value="0"></td>
+        <td><input id="envalabarda" type="number" value="0"></td>
+        <td><input id="envcavalo" type="number" value="0"></td>
+        <td><input id="envbalista" type="number" value="0"></td>
     </tr>
 </table><br>
 <button *ngIf="!atacando" pButton type="button" label="Atacar" class="p-button-danger p-button-raised p-button-rounded" (click)="emAtaque()"></button>
@@ -22,19 +30,19 @@
 <h2 *ngIf="atacando">Em batalha</h2>
 <table border="1" *ngIf="atacando">
     <tr>
-        <td><a [routerLink]="['/sobre']"><img src="../../assets/lança.jpg" alt="lança" width="35px"></a></td>
-        <td><a [routerLink]="['/sobre']"><img src="../../assets/espada.png" alt="lança" width="35px"></a></td>
-        <td><a [routerLink]="['/sobre']"><img src="../../assets/arco.png" alt="lança" width="35px"></a></td>
-        <td><a [routerLink]="['/sobre']"><img src="../../assets/alabarda.jpg" alt="lança" width="35px"></a></td>
-        <td><a [routerLink]="['/sobre']"><img src="../../assets/cavalo.png" alt="lança" width="35px"></a></td>
-        <td><a [routerLink]="['/sobre']"><img src="../../assets/balista.jpg" alt="lança" width="35px"></a></td>
+        <td><a [routerLink]="['/sobre']"><img src="assets/lança.jpg" alt="lança" width="35px"></a></td>
+        <td><a [routerLink]="['/sobre']"><img src="assets/espada.png" alt="lança" width="35px"></a></td>
+        <td><a [routerLink]="['/sobre']"><img src="assets/arco.png" alt="lança" width="35px"></a></td>
+        <td><a [routerLink]="['/sobre']"><img src="assets/alabarda.jpg" alt="lança" width="35px"></a></td>
+        <td><a [routerLink]="['/sobre']"><img src="assets/cavalo.png" alt="lança" width="35px"></a></td>
+        <td><a [routerLink]="['/sobre']"><img src="assets/balista.jpg" alt="lança" width="35px"></a></td>
     </tr>
     <tr>
-        <td>15</td>
-        <td>5</td>
-        <td>20</td>
-        <td>2</td>
-        <td>3</td>
-        <td>1</td>
+        <td>{{envlanca}}</td>
+        <td>{{envespadachim}}</td>
+        <td>{{envarqueiro}}</td>
+        <td>{{envalabarda}}</td>
+        <td>{{envcavalo}}</td>
+        <td>{{envbalista}}</td>
     </tr>
 </table>
