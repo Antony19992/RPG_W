@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +14,8 @@ import {ButtonModule} from 'primeng/button';
 import {SplitterModule} from 'primeng/splitter';
 import {CardModule} from 'primeng/card';
 import { MapComponent } from './base/map/map.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { CepService } from './services/cep.service';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,9 @@ import { MapComponent } from './base/map/map.component';
     SplitterModule,
     CardModule
   ],
-  providers: [],
+  providers: [
+    CepService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
