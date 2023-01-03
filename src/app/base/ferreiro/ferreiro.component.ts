@@ -6,7 +6,7 @@ import { CepService } from 'src/app/services/cep.service';
   templateUrl: './ferreiro.component.html'
 })
 export class FerreiroComponent implements OnInit {
-   
+   endereco: string = '';
 
   constructor(
     private servico: CepService,
@@ -17,7 +17,9 @@ export class FerreiroComponent implements OnInit {
 
   consultaCep() {
     this.servico.getCep().subscribe(data => {
-      console.log(data)
+      console.log(data);
+      console.log(data.complemento);
+      this.endereco = data.complemento
     })
   }
 

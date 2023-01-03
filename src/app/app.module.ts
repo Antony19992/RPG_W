@@ -16,6 +16,7 @@ import {CardModule} from 'primeng/card';
 import { MapComponent } from './base/map/map.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { CepService } from './services/cep.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { CepService } from './services/cep.service';
     BreadcrumbModule,
     ButtonModule,
     SplitterModule,
-    CardModule
+    CardModule,
+    HttpClientModule
   ],
   providers: [
     CepService
