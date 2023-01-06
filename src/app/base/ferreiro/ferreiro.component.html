@@ -1,3 +1,11 @@
 <p>ferreiro works!</p>
-<button (click)="consultaCep()">clique-me</button>
-<p>rua: {{endereco}}</p>
+<input type="text" [(ngModel)]="cep">
+<button (click)="consultaCep(cep)">clique-me</button>
+<p>bairro: {{bairro}}</p>
+<p>complemento: {{complemento}}</p>
+<p>ddd: {{ddd}}</p>
+<p>ibge: {{ibge}}</p>
+<p>localidade: {{localidade}}</p>
+<p>logradouro: {{logradouro}}</p>
+<p>siafi: {{siafi}}</p>
+<p>uf: {{uf}}</p>

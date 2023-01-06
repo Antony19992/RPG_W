@@ -17,6 +17,7 @@ import { MapComponent } from './base/map/map.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { CepService } from './services/cep.service';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { HttpClientModule } from '@angular/common/http';
     ButtonModule,
     SplitterModule,
     CardModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
     CepService
